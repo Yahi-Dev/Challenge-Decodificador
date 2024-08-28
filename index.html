@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/codigo.png"/> 
+    <title>Decodificador (Challenge)</title>
+    <link rel="stylesheet" href="/styles/style.css"> 
+</head>
+<body>
+    <h1></h1>
+    <marquee class="marquee">Estamos a punto de iniciar...</marquee> 
+    <p></p>
+    
+    <div class="container__main" id="partMain">
+        <p class="texto__parrafo" id="container__main__p"></p>
+    </div>
+    
+    <div class="container_question" id="partQuestion">
+        <div class="container_question_user">
+            <input type="text" id="nameUser" class="container__question__nameUser" placeholder="Nombre...">
+            <button onclick="saveName();" class="container__boton">Enviar</button>
+        </div>
+    </div>
+    
+    <div class="container" id="part1">
+        <div class="container_contenido">
+            <input type="text" id="campoCodificador" class="container_contenido_input" placeholder="Texto...">
+            <span class="container_contenido_warning" id="warning"></span>
+            <div>
+                <button onclick="codificarTexto();" class="container__boton">Codificar</button>
+                <button onclick="limpiarCajaCodificadora();" class="container__boton">Limpiar</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container_Result" id="part2">
+        <div class="container_contenido_Resultado">
+            <h2></h2>
+            <textarea class="container_contenido_Resultado_textarea" id="areaDecodificador" placeholder="Texto codificado..."></textarea>
+            <div>
+                <button onclick="decodificarTexto();" class="container__boton">Decodificar</button>
+                <button onclick="copiarTexto();" class="container__boton">Copiar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h4>Yahinniel Alejandro Torres Vasquez - 25/08/2024</h4>
+        <marquee><h6 id="footer">Challenge Alura LATAM</h6></marquee>
+    </footer>
+    <script src="/app.js"></script>
+</body>
+</html>
